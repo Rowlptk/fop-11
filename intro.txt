@@ -1,0 +1,66 @@
+
+
+Revision
+
+1. Flowchart ==> 1 day
+2. C Programming ==> 12 days
+3. HTML,CSS,JavaScript ==> 12 days
+4. Bootstrap ==> 5 days
+5. JQuery & AngularJs ==> 3 days
+6. SQL ==> 3 days
+
+36 days ==> 3 month
+
+Rahul Pathak
+
+BE Electronics and Communication
+
+-------------------------------------------------------------------
+
+Computer ==> input ==> process ==> output
+
+
+45 55 ==> Add ==> 100
+data		 information
+
+
+Programming vs Programming Language
+
+set of instructions
+
+C, C++, JAVA, Python, Ruby, C#, etc
+
+Algorithm
+
+sequence of steps/instructions
+
+Fb
+1. Browser
+2. fb.com
+3. login
+4. explore
+
+1. pseudocode ==> rough code
+
+Begin
+Input two numbers X,Y
+Sum = X+Y
+Display Sum
+End
+
+
+2. flowchart
+
+==> Graphical Representation/ Symbolic Representation of algorithm
+
+
+
+
+
+
+
+
+
+
+
+
