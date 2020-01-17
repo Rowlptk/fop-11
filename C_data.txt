@@ -1,0 +1,115 @@
+Data Types
+
+int ==> +ve 0 -ve ==> without decimal point
+-8,0,100
+%d
+==> 4 byte ==> -2,147,483,648 to 2,147,483,647
+==> long int ==> long long int
+
+float ==> decimal numbers
+-89.9876, 23.564, 0.001
+%f ==> 4 byte  ==> 6 precision ==> .------
+==> 0.000001
+double ==> 8 byte ==> 15 precision
+long double ==> 19 precision
+
+char ==> characters
+'A','%',' ','9'
+%c
+==> 1 byte long
+
+%s ==> string
+
+\n ==> new line
+\t ==> tab space
+\a ==> sound
+\b ==> backspace  ===> Hello\bWorld ==> HellWorld
+\r ==> carriage return ==> Hello\rD  ==> Dello
+\\ ==> print \
+\" ==> print "
+\' ==> print '   ==> '\''
+
+
+/**************Operators******************/
+
+        A + B
+
++ ==> Operator
+A,B ==> Operands
+
+Types of Operator:
+
+1. Arithmetic Operator:
+    +, -, *, /, %(modulo)
+
+    n%2 == 0
+
+    7/2 ==> 3(Q)
+    7%2 ==> 1(R)
+
+    2|7|3
+      6
+      --
+      1
+2. Assignment Operator
+
+=, +=, -=, *=, /=
+
+X = 2
+X += 2 ==> X = X + 2 ==> 4
+
+
+3. Increment/ Decrement Operator
+
+++, --
+
+i = 5;
+
+i++ ==> i = i + 1 ==> 6
+i-- ==> i = i - 1 ==> 4
+
+4. Relational Operator
+
+>, < ,>=, <=, ==, !=(not equal to)
+
+==> Boolean ==> True/False
+
+a=2
+b=3
+
+a==b ==> False
+a!=b ==> True
+
+5. Logical Operator
+
+&&,  ||,  !
+and  or  not
+
+a=2;
+b=3;
+c=2;
+
+!(a==b)
+!T ==> F
+!F ==> T
+(a==b)&&(a!=c)
+
+
+    In1 In2 &&  ||
+    T   T   T   T
+    T   F   F   T
+    F   T   F   T
+    F   F   F   F
+
+6. Conditional Operator(?:)
+
+Syntax :
+
+age = 45;
+    (condition)?True part:False part;
+
+    (age>=18)?printf("You can Vote!"):printf("You are still a kid");
+
+
+
+
