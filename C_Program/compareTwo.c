@@ -7,3 +7,5 @@ void main()
     scanf("%d%d",&num1,&num2);
     (num1>num2)?printf("num1 is greater"):printf("num2 is greater");
 }
+
+ check wether a number is positive or not
