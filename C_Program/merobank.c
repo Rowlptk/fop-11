@@ -7,12 +7,35 @@ void menu();
 void checkbalance();
 void withdraw();
 void deposit();
+void proceed();
 
 int total = 6000;
 void main()
 {
     login();
 }
+
+void proceed()
+{
+    char ch;
+    printf("Press Y to continue...\nN to Quit...\n  ");
+    scanf(" %c",&ch);
+    system("cls");
+    if(ch=='Y' || ch=='y')
+    {
+        menu();
+    }
+    else if(ch=='N' || ch == 'n')
+    {
+        exit(0);
+    }
+    else
+    {
+        proceed();
+    }
+}
+
+
 
 void deposit()
 {
@@ -86,11 +109,12 @@ void menu()
         deposit();
         break;
     case 4:
-        printf("Exit");
-        break;
+        exit(0);
+
     default:
         printf("\nInvalid Option\n");
     }
+    proceed();
 }
 
 void login()

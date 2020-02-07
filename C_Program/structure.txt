@@ -1,0 +1,12 @@
+structure ==> format ==> is a collection
+different types of variable
+
+
+book entry ==> name string, price float, pages int, block char
+
+struct structureName
+{
+    datatype var1;
+    datatype var2;
+    datatype var3;
+}structureVariable1, structureVariable2,structureVariable[50] ;
