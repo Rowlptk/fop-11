@@ -8,13 +8,39 @@ void checkbalance();
 void withdraw();
 void deposit();
 void proceed();
+int read();
+void write(int n);
 
-int total = 6000;
+//int total = 6000;
 void main()
 {
     login();
 }
 
+void write(int n)
+{
+    FILE *fp;
+    fp = fopen("balance.txt","a");
+    fprintf(fp,"\n%d",n);
+    fclose(fp);
+}
+
+
+
+int read()
+{
+    FILE *fp;
+    int n;
+    fp = fopen("balance.txt","r");
+    if(fp == NULL)
+    {
+        printf("Internal Error!");
+        exit(0);
+    }
+    while(fscanf(fp,"%d",&n)==1);
+    fclose(fp);
+    return n;
+}
 void proceed()
 {
     char ch;
@@ -40,13 +66,15 @@ void proceed()
 void deposit()
 {
     int da;
+    int n = read();
     printf("Enter Amount to Deposit : ");
     scanf("%d",&da);
     if(da<=10000)
     {
-        total = total + da;
+        n = n + da;
         printf("\nDeposited Amount = %d\n",da);
-        printf("Total Balance = %d\n",total);
+        printf("Total Balance = %d\n",n);
+        write(n);
     }
     else
     {
@@ -57,17 +85,19 @@ void deposit()
 void withdraw()
 {
     int wa;
+    int n= read();
     printf("Enter a Withdraw Amount : ");
     scanf("%d",&wa);
     if(wa%500 == 0)
     {
-        if(wa<=total)
+        if(wa<=n)
         {
             if(wa<=5000)
             {
-                total = total-wa;
+                n = n-wa;
                 printf("\nWithdraw Amount = %d",wa);
-                printf("\nTotal Balance  = %d\n",total);
+                printf("\nTotal Balance  = %d\n",n);
+                write(n);
             }
             else
             {
@@ -89,7 +119,7 @@ void withdraw()
 
 void checkbalance()
 {
-    printf("\nYour Total Balance = %d\n",total);
+    printf("\nYour Total Balance = %d\n",read());
 }
 
 void menu()
