@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Inputs</title>
+</head>
+<body>
+    <form action="#" method="GET">
+        <!-- Text -->
+        <div>
+            <label for="name">UserName</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <!-- Email -->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <!-- Password -->
+        <div>
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass">
+        </div>
+        <!-- Textarea -->
+        <div>
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+        </div>
+        <!-- Select -->
+        <div>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="Male" disabled>Male</option>
+                <option value="Female" selected>Female</option>
+                <option value="Others" >Others</option>
+            </select>
+        </div>
+        <!-- Number -->
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age">
+        </div>
+
+        <!-- Date -->
+        <div>
+            <label for="dob">Date Of Birth</label>
+            <input type="date" name="dob" id="dob">
+        </div>
+        <!-- Radio -->
+        <div>
+            <label for="mem">Membership</label>
+            <input type="radio" name="mem" id="mem" value="n" >Normal
+            <input type="radio" name="mem" id="mem" value="g" checked>Gold
+            <input type="radio" name="mem" id="mem" value="p" disabled>Platinum
+        </div>
+        <!-- checkbox -->
+        <div>
+            <label for="Q">Qualification</label>
+            <input type="checkbox" name="Q" id="Q" value="S">SEE
+            <input type="checkbox" name="Q" id="Q" value="P2">Plus Two
+            <input type="checkbox" name="Q" id="Q" value="B">Bachelors
+            <input type="checkbox" name="Q" id="Q" value="M">Masters
+            <input type="checkbox" name="Q" id="Q" value="PD">PhD
+        </div>
+
+        <!-- file upload -->
+        <div>
+            <label for="upload">Identification</label>
+            <input type="file" name="upload" id="upload">
+        </div>
+
+        <!-- placeholder and required -->
+        <div>
+            <input type="text" placeholder="Write Something..." required value="apple">
+        </div>
+
+        <input type="submit" value="Login">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
