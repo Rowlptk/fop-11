@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Semantic Tags</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.4;
+        }
+        #header {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #sidebar {
+            /*border: 1px solid red;*/
+            width: 29%;
+            float:right;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        #main {
+            /*border: 1px solid black;*/
+            width: 69%;
+            float:left;
+        }
+        .text-center {
+            display: block;
+            text-align: center;
+            /*border: 1px solid red;*/
+        }
+        .clr {
+            clear: both;
+        }
+        #footer {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .card {
+            border: 1px solid #aaa;
+            background: #f4f4e4;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <h1>My Website</h1>
+        <p>Just Another Website</p>
+    </header>
+
+    <!-- sidebar -->
+    <aside id="sidebar" class="card">
+        <h3>Navigation</h3>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h3>Contact Us</h3>
+        <ul>
+            <li><strong>Address: </strong>50 Main st, Boston MA</li>
+            <li><strong>Phone: </strong>(555) 555-5555</li>
+            <li><strong>Email: </strong>me@somethingcool.com</li>
+        </ul>
+    </aside>
+
+    <!-- main body -->
+    <main id="main">
+        <section class="card">
+            <h2>Welcome To Our Website</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque nobis, tempora exercitationem impedit reprehenderit eligendi ab! Recusandae perspiciatis facilis aut veniam quam architecto voluptate in! <br>
+                <a href="#" class="text-center">Click for More</a>
+            </p>
+        </section>
+
+        <section>
+            <article>
+                <h3>Article One</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed illum doloremque nostrum maxime repellat corrupti laudantium hic, a corporis debitis omnis error magnam adipisci?</p>
+            </article>
+            <article>
+                <h3>Article Two</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed illum doloremque nostrum maxime repellat corrupti laudantium hic, a corporis debitis omnis error magnam adipisci?</p>
+            </article>
+        </section>
+    </main>
+
+    <div class="clr"></div>
+    <!-- Footer -->
+    <footer id="footer">  
+        <p class="text-center">Copyright &copy; My Website 2020</p>
+    </footer>
+</body>
+</html>
+
+CSS ==> types, color, ba... ==>3-4
+form-design, navbar, side-menu, buttons, link state
