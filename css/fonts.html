@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts in CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        #welcome {
+            font-size: 20px;
+        }
+        #welcome p span {
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        #about {
+            font-size: 18px;
+        }
+        #about p span {
+            font-style: italic;
+            font-size: 2em;
+        }
+        /* em vs rem unit ==> em ==> parent, rem==> root==> html==> 16px*/
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2>Welcome</h2>
+        <p>Lorem ipsum dolor  <span>sit amet consectetur adipisicing </span> elit. Dicta nisi dignissimos officia cupiditate placeat cum quam quibusdam harum commodi ex!</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor <span>sit amet consectetur adipisicing </span> elit. Dicta nisi dignissimos officia cupiditate placeat cum quam quibusdam harum commodi ex!</p>
+    </div>
+</body>
+</html>
