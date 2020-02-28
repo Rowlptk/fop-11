@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Styling</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: #344a72;
+            color: #fff;
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            margin: 30px auto;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid white;
+        }
+
+        .form-wrap {
+            background: #fff;
+            color: #333;
+            padding: 15px 25px;
+        }
+
+        .form-wrap h1,
+        .form-wrap p {
+            text-align: center;
+        }
+
+        .form-wrap .form-group {
+            margin-top: 15px;
+        }
+
+        .form-wrap .form-group label {
+            display: block;
+            color: #666;
+        }
+
+        .form-wrap .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: #ddd 1px solid;
+            border-radius: 5px;
+        }
+
+        .form-wrap .btn {
+            display: block;
+            width: 60%;
+            padding: 10px;
+            /*margin-top: 20px;*/
+            margin: 20px auto 0;
+            background: #49c1a2;
+            color: #fff;
+            cursor: pointer;
+           /* transition-duration: 2s;
+            transition-property: all;
+            transition-delay: 1s;
+            transition-timing-function: ease;*/
+            transition: all 500ms ease-in-out 0s;
+        }
+        /* flexbox, grid */
+        /* Animation, JS==> 3 days, 2days, 1 Applications==> task list manager*/
+
+        .form-wrap .btn:hover {
+            background: #37a08e;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .form-wrap .bottom-text {
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        footer { 
+            text-align: center;
+        }
+
+        footer a {
+            color: #49c1a2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrap">
+            <h1>Sign Up</h1>
+            <p>It's free and only takes a minute</p>
+            <form action="#">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="form-group">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" name="password2" id="password2">
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+            <p class="bottom-text">
+                By clicking the Sign Up Button, you agree to our
+                <a href="#">Terms & Conditions</a> and
+                <a href="#">Privacy Policy</a>
+            </p>
+        </div>
+        <footer>
+            <p>Already have an account? <a href="#">Login Here</a></p>
+        </footer>
+    </div>
+</body>
+</html>
