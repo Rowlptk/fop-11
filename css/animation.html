@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in css</title>
+    <!-- Task ==> Login Form Design  -->
+    6 days ==> 3 days,2 days, 1 days==> task list
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            background: black;
+            position: relative;
+            animation-name: animate2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease;
+            animation-fill-mode:forwards;
+            animation-delay: 1s; 
+        }
+        @keyframes animate2{
+            0%{
+                left: 0;
+                top: 0;
+                background: black;
+                border-radius: 0 0 0 0;
+            }
+            25% {
+                left: 300px;
+                top: 0px;
+                background: orange;
+                border-radius: 50% 0 0 0;
+            }
+            50% {
+                left: 300px;
+                top: 300px;
+                background: red;
+                border-radius: 50% 50% 0 0;
+            }
+            75% {
+                left: 0px;
+                top: 300px;
+                background: green;
+                border-radius: 50% 50% 50% 0;
+            }
+            100% {
+                left: 0px;
+                top: 0px;
+                background: blue;
+                border-radius: 50% 50% 50% 50%;
+            }
+
+        }
+
+
+
+
+
+
+        @keyframes animate1 {
+            from {
+                top: 0;
+                left: 0;
+            }
+            to {
+                top: 500px;
+                left: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
