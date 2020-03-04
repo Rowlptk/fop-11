@@ -1,0 +1,12 @@
+javascript
+
+is browser based programming
+
+html ==> content
+css ==> style
+js ==> action
+
+
+3 days ==> intro to programming ==> boring
+2 days ==> DOM Manipulation
+1 day ==> app ==> task list app
