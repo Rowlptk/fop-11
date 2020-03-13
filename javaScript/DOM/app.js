@@ -4,24 +4,23 @@ val = document;
 val = document.body;
 val = document.URL;
 
-// document.getElementById() ==> single element selector
-val = document.getElementById('main');
+// Single element selector
+val = document.getElementById('task-title');
 
 let task = document.querySelector('#task-title');
 
 // Change Styling
 task.style.background = '#333';
 task.style.color = '#fff';
-task.style.padding = '5px';
+task.style.padding = '20px';
 
-// change content
+// Change content
 task.textContent = 'X-men';
 task.innerText = 'Men in Black';
-task.innerHTML = '<span style="color: yellow;">Avengers</span>';
-
+task.innerHTML = '<span style="color:yellow;">Avengers</span>'
 
 val = document.querySelector('.card-title');
-val = document.querySelector('h5');
+val = document.querySelector('label');
 val = document.querySelector('li');
 val = document.querySelector('ul li');
 val = document.querySelector('li:last-child');
@@ -30,47 +29,30 @@ val = document.querySelector('li:nth-child(3)');
 val = document.querySelector('li:nth-child(even)');
 val = document.querySelector('li:nth-child(odd)');
 
-// multiple element selector
+// Multiple Selector, class, tag, querySelectorAll
 // class selector
 val = document.getElementsByClassName('collection-item');
 
-val[1].style.color = 'yellow';
-
+val[1].style.color = 'red'; 
 // tag selector
 val = document.getElementsByTagName('li');
 
 // querySelectorAll
-val = document.querySelectorAll('ul.collection li.collection-item:nth-child(odd)');
+val = document.querySelectorAll('ul.collection li.collection-item');
 
-val.forEach(function(item, index){
-    item.textContent = `${index} : Hello`;
+val = document.querySelectorAll('li:nth-child(odd)');
+let val1 = document.querySelectorAll('li:nth-child(even)');
+
+// loop ==> forEach
+val.forEach(function(item, index) {
     item.style.background = '#ccc';
+    item.textContent = `Hello : ${index}`;
+})
+val1.forEach(function(item, index) {
+    item.style.background = '#aaa';
+    item.textContent = `Hello : ${index + 3}`;
 })
 
-const list = document.querySelector('ul.collection');
-const listItem = document.querySelector('li.collection-item:first-child');
-
-val = list.children[1];
-list.children[1].textContent = 'Hello';
-list.children[3].children[0].id = 'task-link';
-val = list.children[3].children[0];
-
-val = list.firstElementChild;
-val = list.lastElementChild;
-
-val = listItem.parentElement;
-val = listItem.parentElement.parentElement;
-
-val = listItem.nextElementSibling;
-val = listItem.nextElementSibling.nextElementSibling.previousElementSibling;
-
-
-
-
-
-
-
-// to be continued... 
 
 console.log(val);
-//console.log(task);
+console.log(task);
